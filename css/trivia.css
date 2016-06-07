@@ -1,0 +1,24 @@
+html {
+    background-image: url("../images/Dubai-City-Lights.jpg");
+    background-size: cover;
+}
+h1 {
+    color: Teal;
+    text-align: center;
+    
+}
+h2 {
+    color: Teal;
+    text-align: center;
+    
+}
+button {
+    background: teal;
+    border: 2px solid orange;
+    padding: 1em;
+    text-align: center;
+    margin: auto;
+}
+footer {
+    color: white;
+}
