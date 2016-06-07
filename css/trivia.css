@@ -1,10 +1,16 @@
+@font-face {
+    font-family: 'Kaushan';
+    src: url('../fonts/KaushanScript-Regular.otf');
+}
 html {
     background-image: url("../images/Dubai-City-Lights.jpg");
     background-size: cover;
 }
 h1 {
+    font-family: 'Kaushan';
     color: Teal;
     text-align: center;
+    font-size: 5em;
     
 }
 h2 {
@@ -12,13 +18,31 @@ h2 {
     text-align: center;
     
 }
+h3 {
+    font-family: 'Kaushan';
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 2px;
+    padding: 10px;
+}
 button {
     background: teal;
     border: 2px solid orange;
     padding: 1em;
-    text-align: center;
-    margin: auto;
+    position:relative;
+     top:50%; 
+    left:50%;
 }
 footer {
     color: white;
+}
+#Player1 {
+    background-color: blue;
+    font-size: 3em;
+    float: left;
+}
+#Player2 {
+    background-color: red;
+    font-size: 3em;
+    float: right;
 }
