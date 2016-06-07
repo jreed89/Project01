@@ -2,6 +2,7 @@ Minimum Viable Product!!
 
 Trivia Game 
 User Stories
+
 1. Screen should load with "Test your knowledge with the Brain Game" statement
 2. Option to start game with player2 or start game with CPU.
 3. Player1 will type in there name.
