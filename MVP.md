@@ -2,6 +2,7 @@ Minimum Viable Product!!
 
 Trivia Game 
 User Stories
+
 1. Screen should load with "Test your knowledge with the Brain Game" statement.(stretch)
 2. Option to start game with player2 or start game with CPU.(stretch)
 3. Player1 will type in there name.(stretch)
@@ -17,6 +18,10 @@ User Stories
 14. If a Player1 score is higher than the others after 12 questions, they win.(vis-versa).(stretch)
 15. If Players score are the same after 12 questions, then its a tie.
 16. Add transition to answer buttons to change color when hovered over.(stretch)
+
 Stretch
+
 1. When question start you will have 10-15 secs to answer the question.
+2. If answer is choosen incorretly, show the right answer.
 3. If there are 2 players, they both have to answer a question to see who goes first.
+
