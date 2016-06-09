@@ -15,9 +15,11 @@ startGame.onclick = function(){
 function start(){
     showTiles();
 }
+
 function showTiles(){
-    document.getElementById("gameBoard");                       //referenceing the div tag where my tile will appear
-    for(var i = 0; qtiles.length; ++i){    
+   
+                          //referenceing the div tag where my tile will appear
+    for(var i = 0; i < qtiles.length; i++){    
         var tiles = document.createElement("div");              //creating a tag for tiles
         tiles.className = "squares";                            //adding a class name to tiles to reference in the future
         tiles.setAttribute("data-values",qtiles[i]);
@@ -55,10 +57,7 @@ function showTiles(){
     //add reset button to restart the game from beginning.
         
         
-};
-
-var Game = {
-    gameQuestions: {
+var gameQuestions = {
     1: {  
         question: "Which is the worlds largest ocean?",
         answers: {
@@ -141,12 +140,13 @@ var Game = {
         }
        },
     10: {  
-        question: "Which is the worlds largest ocean?",
+        question: "What is the biggest animal to inhabit the earth?",
         answers: {
-            a1: {text: "Pacific", key: true},
-            a2: {text: "Artic", key: false},
-            a3: {text: "Indian", key: false},
-            a4: {text: "Southern", key: false},
+            a1: {text: "Killer Whale", key: false},
+            a2: {text: "Blue Whale", key: true},
+            a3: {text: "Elephant", key: false},
+            a4: {text: "Sperm Whale", key: false},
         }
        }
-      },
+    };
+}

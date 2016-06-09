@@ -46,3 +46,10 @@ footer {
     font-size: 3em;
     float: right;
 }
+.squares {
+    font-size: 1em;
+    background-color: teal;
+    display: inline-block;
+    padding: 1em;
+    border: 2px solid white;
+}
