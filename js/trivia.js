@@ -1,5 +1,5 @@
 window.onload = function() {
-console.log("This is why I'm hot");
+console.log("RogueNation");
 
 //Psuedo Code//
 
@@ -7,31 +7,27 @@ console.log("This is why I'm hot");
 var startGame = document.getElementById("start");
 var qtiles = ['1' ,'2', '3', '4', '5', '6', '7', '8', '9', '10'];
 startGame.onclick = function(){
-    alert("Click Buttons work!!!!")
     start();
 };
 //when start button is clicked
     //both score elements should be displayed(appended) under the players names.
     //12 clickable question tiles should appear in the middle on the bottom of the page.
 function start(){
-    showScore();
     showTiles();
-}
-function showScore(){
-    
 }
 function showTiles(){
     document.getElementById("gameBoard");                       //referenceing the div tag where my tile will appear
     for(var i = 0; qtiles.length; ++i){    
         var tiles = document.createElement("div");              //creating a tag for tiles
         tiles.className = "squares";                            //adding a class name to tiles to reference in the future
-        tiles.setAttribute("data-values",tiles[i]);
+        tiles.setAttribute("data-values",qtiles[i]);
+        tiles.innerHTML = "it works";
         document.getElementById("gameBoard").appendChild(tiles);//put div elements into gameboard
-        tiles.onlick = function(){
-            console.log("it works");
-        };
+        // tiles.onlick = function(){
+        // };
     }
 }
+
 
 //when 12 clickable question tiles are displayed
     //make sure question and possible answers are linked to question tiles.
@@ -60,3 +56,97 @@ function showTiles(){
         
         
 };
+
+var Game = {
+    gameQuestions: {
+    1: {  
+        question: "Which is the worlds largest ocean?",
+        answers: {
+            a1: {text: "Pacific", key: true},
+            a2: {text: "Artic", key: false},
+            a3: {text: "Indian", key: false},
+            a4: {text: "Southern", key: false},
+        }
+       },
+    2: {  
+        question: "Which record label did Micheal Jackson record on?",
+        answers: {
+            a1: {text: "Epic", key: false},
+            a2: {text: "Sun", key: false},
+            a3: {text: "Warner Bros", key: false},
+            a4: {text: "Motown", key: true},
+        }
+       },
+    3: {  
+        question: "Where is Disney World?",
+        answers: {
+            a1: {text: "Florida", key: true},
+            a2: {text: "California", key: false},
+            a3: {text: "New Mexico", key: false},
+            a4: {text: "Georgia", key: false},
+        }
+       },
+    4: {  
+        question: "In which country did Marilyn Monroe die in?",
+        answers: {
+            a1: {text: "Brazil", key: false},
+            a2: {text: "United States", key: true},
+            a3: {text: "England", key: false},
+            a4: {text: "Spain", key: false},
+        }
+       },
+    5: {  
+        question: "Harstfeild international airport is located in what state?",
+        answers: {
+            a1: {text: "Alabama", key: false},
+            a2: {text: "New York", key: false},
+            a3: {text: "Georgia", key: true},
+            a4: {text: "Florida", key: false},
+        }
+       },
+    6: {  
+        question: "In baseball, where are the Blue Jays from?",
+        answers: {
+            a1: {text: "California", key: false},
+            a2: {text: "New York", key: false},
+            a3: {text: "Toronto", key: true},
+            a4: {text: "Michigan", key: false},
+        }
+       },
+    7: {  
+        question: "Where is the Golden Gate Bridge?",
+        answers: {
+            a1: {text: "California", key: true},
+            a2: {text: "Pennsylvania", key: false},
+            a3: {text: "Denver", key: false},
+            a4: {text: "New York City", key: false},
+        }
+       },
+    8: {  
+        question: "Which planet is closest to the sun?",
+        answers: {
+            a1: {text: "Saturn", key: false},
+            a2: {text: "Mercury", key: true},
+            a3: {text: "Mars", key: false},
+            a4: {text: "Jupiter", key: false},
+        }
+       },
+    9: {  
+        question: "Which country gave the USA the 'Statute of Liberty'?",
+        answers: {
+            a1: {text: "Venzuela", key: true},
+            a2: {text: "Britain", key: false},
+            a3: {text: "Spain", key: false},
+            a4: {text: "France", key: true},
+        }
+       },
+    10: {  
+        question: "Which is the worlds largest ocean?",
+        answers: {
+            a1: {text: "Pacific", key: true},
+            a2: {text: "Artic", key: false},
+            a3: {text: "Indian", key: false},
+            a4: {text: "Southern", key: false},
+        }
+       }
+      },

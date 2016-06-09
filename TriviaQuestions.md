@@ -14,7 +14,7 @@
     
     -Epic Records
     
-    -Epic Records 
+    -Sun Records 
     
     -Warner Brother Records
     
