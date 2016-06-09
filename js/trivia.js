@@ -7,13 +7,18 @@ console.log("This is why I'm hot");
 var startGame = document.getElementById("start");
 var qtiles = ['1' ,'2', '3', '4', '5', '6', '7', '8', '9', '10'];
 startGame.onclick = function(){
+    alert("Click Buttons work!!!!")
     start();
 };
 //when start button is clicked
     //both score elements should be displayed(appended) under the players names.
     //12 clickable question tiles should appear in the middle on the bottom of the page.
 function start(){
+    showScore();
     showTiles();
+}
+function showScore(){
+    
 }
 function showTiles(){
     
