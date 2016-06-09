@@ -1,12 +1,23 @@
 window.onload = function() {
 console.log("This is why I'm hot");
-};
+
 //Psuedo Code//
 
 //create a click event from the start button
+var startGame = document.getElementById("start");
+var qtiles = ['1' ,'2', '3', '4', '5', '6', '7', '8', '9', '10'];
+startGame.onclick = function(){
+    start();
+};
 //when start button is clicked
     //both score elements should be displayed(appended) under the players names.
     //12 clickable question tiles should appear in the middle on the bottom of the page.
+function start(){
+    showTiles();
+}
+function showTiles(){
+    
+}   
 //when 12 clickable question tiles are displayed
     //make sure question and possible answers are linked to question tiles.
     //make sure Player 1 goes first and it alternates players after everyturn.
@@ -33,4 +44,4 @@ console.log("This is why I'm hot");
     //add reset button to restart the game from beginning.
         
         
-    
+};
