@@ -21,8 +21,18 @@ function showScore(){
     
 }
 function showTiles(){
-    
-}   
+    document.getElementById("gameBoard");                       //referenceing the div tag where my tile will appear
+    for(var i = 0; qtiles.length; ++i){    
+        var tiles = document.createElement("div");              //creating a tag for tiles
+        tiles.className = "squares";                            //adding a class name to tiles to reference in the future
+        tiles.setAttribute("data-values",tiles[i]);
+        document.getElementById("gameBoard").appendChild(tiles);//put div elements into gameboard
+        tiles.onlick = function(){
+            console.log("it works");
+        };
+    }
+}
+
 //when 12 clickable question tiles are displayed
     //make sure question and possible answers are linked to question tiles.
     //make sure Player 1 goes first and it alternates players after everyturn.
