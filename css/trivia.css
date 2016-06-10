@@ -5,6 +5,7 @@
 html {
     background-image: url("../images/Dubai-City-Lights.jpg"); /*try to make the background parallax*/
     background-size: cover;
+    
 }
 h1 {
     font-family: 'Kaushan';
@@ -53,4 +54,15 @@ footer {
     display: inline-block;
     padding: 1em;
     border: 2px solid white;
+}
+section {
+    top: 100%;
+    position: absolute;
+    padding-left: 10em;
+    padding-right: 10em;
+    margin-bottom: 10em;
+    /*padding-left: 40%;*/
+}
+#gameBoard {
+    text-align: center;
 }

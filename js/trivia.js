@@ -20,45 +20,25 @@ function start(){
 }
 
 function showTiles(){
-   
-                          //referenceing the div tag where my tile will appear
+    //referenceing the div tag where my tile will appear
     for(var i = 0; i < qtiles.length; i++){    
         var tiles = document.createElement("div");              //creating a tag for tiles
         tiles.className = "squares";                            //adding a class name to tiles to reference in the future
-        tiles.setAttribute("data-values",qtiles[i]);
+        tiles.setAttribute("data",qtiles[i]);
+        tiles.setAttribute("id",`tile${i}`);                   //string concantenation(makes the i interactive)
         tiles.innerHTML = "Q";
         document.getElementById("gameBoard").appendChild(tiles);//put div elements into gameboard
         tiles.onlick = function(){
-            tiviaQuestions()};
-            
+            console.log("win One");                                   //click the question tiles, questions should arise
+        };
     }
 }
 //when 10 clickable question tiles are displayed
-    //make sure Player 1 goes first and it alternates players after everyturn.
-//when individual question tiles are clicked
-
-    //questions should appear
+    //make sure Player 1 goes first and it alternates players after everyturn.(strech)
+    //when individual question tiles are clicked, questions should appear
     //possible asnwers should appear as well.
     //change the color of question tiles after click.
     //make button unclickable after clicked.
-//when possible asnwers are chosen
-    //game should display wether the answer is right or wrong (IF STATEMENT).
-        // if correct answer clicked, highlight answer in yellow.
-            //transition it to spin.
-        // if incorrect answer clicked, highlight players answer red and right answer in yellow.
-    // make sure the score changes when answer is correct.
-    // "switch" button should appear after answer is chosen.
-//when "switch" button is clicked
-    //make question and possible answers dissappear.
-//when 12 question tiles are chosen
-    //check for a winner
-    // if player 1 wins, display image
-    //if player 2 wins, display image
-    //else display tie. 
-//once winner displayed
-    //add reset button to restart the game from beginning.
-        
-        
 var gameQuestions = {
     1: {  
         question: "Which is the worlds largest ocean?",
@@ -151,4 +131,23 @@ var gameQuestions = {
         }
        }
     };
-}
+//when possible asnwers are chosen
+    //game should display wether the answer is right or wrong (IF STATEMENT).
+        // if correct answer clicked, highlight answer in yellow.
+            //transition it to spin.
+        // if incorrect answer clicked, highlight players answer red and right answer in yellow.
+    // make sure the score changes when answer is correct.
+    // "switch" button should appear after answer is chosen.
+//when "switch" button is clicked
+    //make question and possible answers dissappear.
+//when 12 question tiles are chosen
+    //check for a winner
+    // if player 1 wins, display image
+    //if player 2 wins, display image
+    //else display tie. 
+//once winner displayed
+    //add reset button to restart the game from beginning.
+        
+        
+
+};
