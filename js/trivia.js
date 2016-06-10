@@ -24,14 +24,23 @@ function showTiles(){
     for(var i = 0; i < qtiles.length; i++){    
         var tiles = document.createElement("div");              //creating a tag for tiles
         tiles.className = "squares";                            //adding a class name to tiles to reference in the future
-        tiles.setAttribute("data",qtiles[i]);
+        // tiles.setAttribute("data",qtiles[i]);
         tiles.setAttribute("id",`tile${i}`);                   //string concantenation(makes the i interactive)
         tiles.innerHTML = "Q";
         document.getElementById("gameBoard").appendChild(tiles);//put div elements into gameboard
-        tiles.onlick = function(){
-            console.log("win One");                                   //click the question tiles, questions should arise
-        };
+        // tiles.addEventListener("click", function(){
+        //     console.log("win");
+        // });
+        // tiles.onlick = function(){
+        //     console.log("win One");                                   //click the question tiles, questions should arise
+        // };
+        
     }
+    questions();
+}
+
+function questions(){
+    
 }
 //when 10 clickable question tiles are displayed
     //make sure Player 1 goes first and it alternates players after everyturn.(strech)
