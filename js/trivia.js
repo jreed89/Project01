@@ -7,11 +7,14 @@ console.log("RogueNation");
 var startGame = document.getElementById("start");
 var qtiles = ['1' ,'2', '3', '4', '5', '6', '7', '8', '9', '10'];
 startGame.onclick = function(){
+        startGame.style.display = 'none';
     start();
+
 };
 //when start button is clicked
     //both score elements should be displayed(appended) under the players names.
-    //12 clickable question tiles should appear in the middle on the bottom of the page.
+    //10 clickable question tiles should appear in the middle on the bottom of the page.
+    //make sure question and possible answers are linked to question tiles.
 function start(){
     showTiles();
 }
@@ -23,18 +26,17 @@ function showTiles(){
         var tiles = document.createElement("div");              //creating a tag for tiles
         tiles.className = "squares";                            //adding a class name to tiles to reference in the future
         tiles.setAttribute("data-values",qtiles[i]);
-        tiles.innerHTML = "it works";
+        tiles.innerHTML = "Q";
         document.getElementById("gameBoard").appendChild(tiles);//put div elements into gameboard
-        // tiles.onlick = function(){
-        // };
+        tiles.onlick = function(){
+            tiviaQuestions()};
+            
     }
 }
-
-
-//when 12 clickable question tiles are displayed
-    //make sure question and possible answers are linked to question tiles.
+//when 10 clickable question tiles are displayed
     //make sure Player 1 goes first and it alternates players after everyturn.
 //when individual question tiles are clicked
+
     //questions should appear
     //possible asnwers should appear as well.
     //change the color of question tiles after click.

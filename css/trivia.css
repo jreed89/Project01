@@ -30,7 +30,7 @@ button {
     border: 2px solid orange;
     padding: 1em;
     position:relative;
-     top:50%; 
+    top:50%; 
     left:45%;
 }
 footer {
@@ -47,7 +47,8 @@ footer {
     float: right;
 }
 .squares {
-    font-size: 1em;
+    font-size: 2em;
+    font-family: "Kaushan";
     background-color: teal;
     display: inline-block;
     padding: 1em;
