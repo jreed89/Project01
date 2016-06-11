@@ -5,7 +5,8 @@ console.log("RogueNation");
 
 //create a click event from the start button
 var startGame = document.getElementById("start");
-var qtiles = ['1' ,'2', '3', '4', '5', '6', '7', '8', '9', '10'];
+var squares = document.getElementsByClassName("squares");
+var qtiles = ['1' ,'2', '3', '4', '5', '6', '7', '8', '9', '10'];           //array of tiles for my questions to be housed
 startGame.onclick = function(){
         startGame.style.display = 'none';
     start();
@@ -28,18 +29,22 @@ function showTiles(){
         tiles.setAttribute("id",`tile${i}`);                   //string concantenation(makes the i interactive)
         tiles.innerHTML = "Q";                                 //put the Q inside the the tiles
         document.getElementById("gameBoard").appendChild(tiles);//put div elements into gameboard
-        tiles.addEventListener('click', function(){
-            alert("win");
-        });
+        tiles.onclick = function(){
+            questions();
+        };
         // tiles.onlick = function(){
         //     console.log("win One");                                   //click the question tiles, questions should arise
         // };
         
     }
-    // questions();
 }
 
-    
+function questions() {
+    var tiles = document.createElement("button");
+    for(var i = 0; i < squares.length; i++){
+        alert('Star Wars');
+    }
+}
 };
 //when 10 clickable question tiles are displayed
     //make sure Player 1 goes first and it alternates players after everyturn.(strech)
@@ -47,7 +52,7 @@ function showTiles(){
     //possible asnwers should appear as well.
     //change the color of question tiles after click.
     //make button unclickable after clicked.
-var gameQuestions = {
+var questions = {
     1: {  
         question: "Which is the worlds largest ocean?",
         answers: {
