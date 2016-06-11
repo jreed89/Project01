@@ -30,7 +30,7 @@ function showTiles(){
         tiles.innerHTML = "Q";                                 //put the Q inside the the tiles
         document.getElementById("gameBoard").appendChild(tiles);//put div elements into gameboard
         tiles.onclick = function(){
-            questions();
+            questionsAppear();
         };
         // tiles.onlick = function(){
         //     console.log("win One");                                   //click the question tiles, questions should arise
@@ -39,9 +39,10 @@ function showTiles(){
     }
 }
 
-function questions() {
-    var tiles = document.createElement("button");
+function questionsAppear() {
+    
     for(var i = 0; i < squares.length; i++){
+        var tiles = document.createElement("button");
         alert('Star Wars');
     }
 }
