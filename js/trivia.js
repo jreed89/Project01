@@ -22,26 +22,25 @@ function start(){
 function showTiles(){
     //referenceing the div tag where my tile will appear
     for(var i = 0; i < qtiles.length; i++){    
-        var tiles = document.createElement("div");              //creating a tag for tiles
+        var tiles = document.createElement("button");              //creating a tag for tiles
         tiles.className = "squares";                            //adding a class name to tiles to reference in the future
         // tiles.setAttribute("data",qtiles[i]);
         tiles.setAttribute("id",`tile${i}`);                   //string concantenation(makes the i interactive)
-        tiles.innerHTML = "Q";
+        tiles.innerHTML = "Q";                                 //put the Q inside the the tiles
         document.getElementById("gameBoard").appendChild(tiles);//put div elements into gameboard
-        // tiles.addEventListener("click", function(){
-        //     console.log("win");
-        // });
+        tiles.addEventListener('click', function(){
+            alert("win");
+        });
         // tiles.onlick = function(){
         //     console.log("win One");                                   //click the question tiles, questions should arise
         // };
         
     }
-    questions();
+    // questions();
 }
 
-function questions(){
     
-}
+};
 //when 10 clickable question tiles are displayed
     //make sure Player 1 goes first and it alternates players after everyturn.(strech)
     //when individual question tiles are clicked, questions should appear
@@ -139,6 +138,9 @@ var gameQuestions = {
             a4: {text: "Sperm Whale", key: false},
         }
        }
+//     start: function() {
+//     this.loadQuestion('1');
+//   },
     };
 //when possible asnwers are chosen
     //game should display wether the answer is right or wrong (IF STATEMENT).
@@ -159,4 +161,3 @@ var gameQuestions = {
         
         
 
-};
