@@ -5,6 +5,7 @@
 html {
     background-image: url("../images/Dubai-City-Lights.jpg"); /*try to make the background parallax*/
     background-size: cover;
+    overflow: hidden;
     
 }
 h1 {
@@ -65,7 +66,7 @@ footer {
     border: 2px solid white;
 }
 section {
-    top: 100%;
+    top: 90%;
     position: absolute;
     padding-left: 28em;
     padding-right: 10em;
