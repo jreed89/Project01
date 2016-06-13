@@ -26,11 +26,12 @@ function showTiles(){
         var tiles = document.createElement("button");              //creating a tag for tiles
         tiles.className = "squares";                            //adding a class name to tiles to reference in the future
         // tiles.setAttribute("data",qtiles[i]);
-        tiles.setAttribute("id",`tile${i}`);                   //string concantenation(makes the i interactive)
+        tiles.setAttribute("id",`t${i}`);                   //string concantenation(makes the i interactive)
         tiles.innerHTML = "Q";                                 //put the Q inside the the tiles
         document.getElementById("gameBoard").appendChild(tiles);//put div elements into gameboard
-        tiles.onclick = function(){
-            questionsAppear();
+        tiles.onclick = function(event){
+            event.stopPropagation();
+            question1();
         };
         // tiles.onlick = function(){
         //     console.log("win One");                                   //click the question tiles, questions should arise
@@ -38,14 +39,13 @@ function showTiles(){
         
     }
 }
-
-function questionsAppear() {
-    
-    for(var i = 0; i < squares.length; i++){
-        var tiles = document.createElement("button");
-        alert('Star Wars');
+function question1(event) {
+    var tile1 = document.getElementById("t0");
+    // for(var i = 0; i < squares.length; i++){
+    //     alert('Star Wars');
+    // }
+    tile1.innerHTML = "inner";
     }
-}
 };
 //when 10 clickable question tiles are displayed
     //make sure Player 1 goes first and it alternates players after everyturn.(strech)
