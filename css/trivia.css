@@ -15,7 +15,7 @@ h1 {
     
 }
 h2 {
-    color: Teal;
+    color: white;
     text-align: center;
     
 }
@@ -23,16 +23,25 @@ h3 {
     font-family: 'Kaushan';
     display: inline-block;
     border: 2px solid white;
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 10px;
 }
-button {
+#start {
+    font-family: 'Kaushan';
+    font-size: 1em;
     background: teal;
-    border: 2px solid orange;
+    border: 2px solid blue;
+    border-radius: 5px;
     padding: 1em;
     position:relative;
     top:50%; 
-    left:45%;
+    left:44%;
+    display: inline-block;
+    transition-duration: 3s;
+    
+}
+#start:hover {
+    background: red;
 }
 footer {
     color: white;
@@ -58,7 +67,7 @@ footer {
 section {
     top: 100%;
     position: absolute;
-    padding-left: 10em;
+    padding-left: 28em;
     padding-right: 10em;
     margin-bottom: 10em;
     /*padding-left: 40%;*/
@@ -66,3 +75,6 @@ section {
 #gameBoard {
     text-align: center;
 }
+/*#start {*/
+    
+/*}*/

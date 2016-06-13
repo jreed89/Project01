@@ -1,33 +1,28 @@
 # Trivia Game
 
 ## Synopsis
+This is trivia game created to test the knowledge of the player in different subject by answering 
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+## MVP
+- Screen should load with "Test your knowledge" statement.
+- Click start and tiles appear.
+- When the game starts, there will be a score display next to both names.
+- When question is answered it will display if correct or incorrect.
+- When possible answer is clicked, possible answer button will become highlighted.
+- The correct answer will also be highlighted a certain color if correct.
+- The correct answer will be highlighted a certain color if not chosen.
+- If Players score are the same after 12 questions, then its a tie.
 
-## Code Example
+##Stretch Goals
+-Player1 will type in there name.
+-If there is a player Player2, type in there name.
+-After the right answer is chosen, the score will reflect the right answer.
+-If a Player1 score is higher than the others after 12 questions, they win.(vis-versa)
 
-Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
-
-## Motivation
-
-A short description of the motivation behind the creation and maintenance of the project. This should explain **why** the project exists.
-
-## Installation
-
-Provide code examples and explanations of how to get the project.
-
-## API Reference
-
-Depending on the size of the project, if it is small and simple enough the reference docs can be added to the README. For medium size to larger projects it is important to at least provide a link to where the API reference docs live.
-
-## Tests
-
-Describe and show how to run the tests with code examples.
-
-## Contributors
-
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+## References
+http://www.w3schools.com/
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
+http://buzznigeria.com/fun-trivia-questions-answers/
+http://www.brainist.com/trivia-questions/
+http://dubaibuildingsforsale.com/dubai-city-lights-city-skyline-841310-1920x1200/
+-Class Notes(github)
