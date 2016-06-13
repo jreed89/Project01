@@ -15,8 +15,11 @@ This is trivia game created to test the knowledge of the player in different sub
 
 ##Stretch Goals
 -Player1 will type in there name.
+
 -If there is a player Player2, type in there name.
+
 -After the right answer is chosen, the score will reflect the right answer.
+
 -If a Player1 score is higher than the others after 12 questions, they win.(vis-versa)
 
 ## References
