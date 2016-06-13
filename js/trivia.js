@@ -6,7 +6,7 @@ console.log("RogueNation");
 //create a click event from the start button
 var startGame = document.getElementById("start");
 var squares = document.getElementsByClassName("squares");
-var qtiles = ['1' ,'2', '3', '4', '5', '6', '7', '8', '9', '10'];           //array of tiles for my questions to be housed
+var qtiles = ['1' ,'2', '3'];           //array of tiles for my questions to be housed
 startGame.onclick = function(){
         startGame.style.display = 'none';
     start();
@@ -29,9 +29,10 @@ function showTiles(){
         tiles.setAttribute("id",`t${i}`);                   //string concantenation(makes the i interactive)
         tiles.innerHTML = "Q";                                 //put the Q inside the the tiles
         document.getElementById("gameBoard").appendChild(tiles);//put div elements into gameboard
-        tiles.onclick = function(event){
-            event.stopPropagation();
+        tiles.onclick = function(){                    //make a click event 
+            // event.stopPropagation();
             question1();
+            question2();
         };
         // tiles.onlick = function(){
         //     console.log("win One");                                   //click the question tiles, questions should arise
@@ -39,13 +40,22 @@ function showTiles(){
         
     }
 }
-function question1(event) {
+var holder = document.getElementsByClassName("questions-holder");
+var questions = document.getElementsByClassName("questions");
+var answers = document.getElementsByClassName("answers");
+function question1() {
     var tile1 = document.getElementById("t0");
-    // for(var i = 0; i < squares.length; i++){
-    //     alert('Star Wars');
-    // }
-    tile1.innerHTML = "inner";
+    var questions = document.getElementsByClassName("questions");
+        tile1.onclick = function() {
+        questions.innertext = "winner";
+        };
     }
+function question2() {
+    var tile2 = document.getElementById("t1");
+        tile2.onlick = function() {
+            alert("wins");
+        };
+}
 };
 //when 10 clickable question tiles are displayed
     //make sure Player 1 goes first and it alternates players after everyturn.(strech)
@@ -144,8 +154,7 @@ var questions = {
             a4: {text: "Sperm Whale", key: false},
         }
        }
-//     start: function() {
-//     this.loadQuestion('1');
+
 //   },
     };
 //when possible asnwers are chosen
