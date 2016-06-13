@@ -21,8 +21,13 @@ This is trivia game created to test the knowledge of the player in different sub
 
 ## References
 http://www.w3schools.com/
+
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
+
 http://buzznigeria.com/fun-trivia-questions-answers/
+
 http://www.brainist.com/trivia-questions/
+
 http://dubaibuildingsforsale.com/dubai-city-lights-city-skyline-841310-1920x1200/
+
 -Class Notes(github)
